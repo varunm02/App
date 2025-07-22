@@ -8,7 +8,7 @@ EXPOSE 8080
 ENV APP_HOME /home/ec2-user
 
 # Copy the SNAPSHOT jar from current directory to container
-COPY *SNAPSHOT.jar $APP_HOME/app.jar
+COPY target/*SNAPSHOT.jar $APP_HOME/app.jar
 
 # Set the working directory to $APP_HOME
 WORKDIR $APP_HOME
