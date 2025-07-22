@@ -8,7 +8,7 @@ EXPOSE 8080
 ENV APP_HOME /home/ec2-user
 
 # Copy any .jar file in the target directory to the container's app.jar
-COPY /home/ec2-user/*.jar $APP_HOME/app.jar
+COPY /home/ec2-user/*SNAPSHOT.jar $APP_HOME/app.jar
 
 # Set the working directory to $APP_HOME
 WORKDIR $APP_HOME
